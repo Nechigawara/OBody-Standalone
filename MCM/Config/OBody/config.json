@@ -1,0 +1,46 @@
+{
+  "modName": "OBody",
+  "displayName": "$titleOBody",
+  "minMcmVersion": 9,
+  "pluginRequirements": [],
+  "cursorFillMode": "topToBottom",
+  "content": [
+	{
+		"id": "bORefitEnable:OBodyStandalone",
+		"text": "$bORefitEnable",
+		"type": "toggle",
+		"valueOptions": {
+			"sourceType": "ModSettingBool",
+			"defaultValue": true
+		}
+	},
+	{
+		"id": "bNippleEnable:OBodyStandalone",
+		"text": "$bNippleEnable",
+		"type": "toggle",
+		"valueOptions": {
+			"sourceType": "ModSettingBool",
+			"defaultValue": true
+		}
+	},
+	{
+		"id": "bGenitalEnable:OBodyStandalone",
+		"text": "$bGenitalEnable",
+		"type": "toggle",
+		"valueOptions": {
+			"sourceType": "ModSettingBool",
+			"defaultValue": true
+		}
+	},
+	{
+		"id": "iPresetKey:OBodyStandalone",
+		"text": "$iPresetKey",
+		"type": "keymap",
+		"ignoreConflicts": false,
+		"valueOptions": {
+			"sourceType": "ModSettingInt",
+			"defaultValue": 68
+		}
+	}
+  ]
+}
