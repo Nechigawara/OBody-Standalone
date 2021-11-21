@@ -55,7 +55,7 @@ Event OnInit()
 	Int femaleSize = OBodyNative.GetFemaleDatabaseSize()
 	Int maleSize = OBodyNative.GetMaleDatabaseSize()
 	Debug.Notification("OBody Standalone Installed: [F: " + femaleSize + "] [M: " + maleSize + "]")
-
+	ObodyConsole("Game Start with Obody")
 	;OUtils.getOStim().RegisterForGameLoadEvent(self)
 	;RegisterForOUpdate(self)
 
@@ -84,11 +84,12 @@ EndFunction
 
 int Function GetAPIVersion()
 	return 2
-endfunction 
+EndFunction 
 
-Event OnGameLoad()
+Function OnGameLoad()
+	ObodyConsole("Game Loaded with Obody")
 	OnLoad()
-EndEvent
+EndFunction
 
 bool Function ObodyMenuOpen()
 	return (Utility.IsInMenuMode() || UI.IsMenuOpen("console")) || UI.IsMenuOpen("Crafting Menu") || UI.IsMenuOpen("Dialogue Menu")
